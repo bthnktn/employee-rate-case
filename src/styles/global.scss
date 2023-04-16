@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo {
+  border-radius: 16px;
+}
+.card-content {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  width: 600px;
+  max-width: calc(100% - 60px);
+  border-radius: 16px;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  justify-content: center;
+
+
+  .info {
+    $font-color: black;
+    color: lighten($font-color, 40);
+    .name {
+      color: $font-color;
+      font-size: large;
+    }
+    .details-link {
+      text-decoration: none;
+      color: darkorange;
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+button {
+  $background: #efefefdd;
+  $border-color: #e0e0e0;
+  padding: 12px 20px;
+  border: none;
+  background: $background;
+  border: 1px dashed #e0e0e0;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.4s all;
+
+  &:hover,
+  &:focus {
+    border-color: darken($border-color, 5);
+    border-style: solid;
+    background: darken($background, 5);
+  }
+}
+
+.detail-card {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    width: 600px;
+    max-width: calc(100% - 60px);
+    border-radius: 16px;
+    margin: 10px 0;
+    button {
+        margin-bottom: 16px;
+    }
+}
