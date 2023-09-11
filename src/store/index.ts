@@ -1,6 +1,5 @@
 import { Employee, Employees, EmployeeStoreData } from "@/interfaces";
-import { configureStore, PayloadAction } from "@reduxjs/toolkit";
-import { createSlice } from "@reduxjs/toolkit";
+import { configureStore, PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 const initialState: {
   employeeData: EmployeeStoreData[];
